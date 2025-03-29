@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet dos amigos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar" 
+        <div class="container-fluid">
+          <a class="navbar-brand custom-brand" href="#">Bet dos Amigos</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <small class="text-muted d-block">+18 | apoiamo</small>
+                    <a class="nav-link custom-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <small class="text-muted d-block">s jogo responsável</small>
+                    <a class="nav-link custom-link" href="cadastro.html">Registrar</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid main-content" >
+        <div class="row">
+            <div class="col-lg-3 col-md-4 em-alta">
+                <h5>Em Alta</h5>
+                <ul class="list-unstyled">
+                    <li> <i class="fas fa-futbol"></i> <a href="#" class="lista-em-alta">Inglaterra - Premier League</a></li>
+                    <li> <i class="fas fa-futbol"></i> <a href="#" class="lista-em-alta">Itália - Serie A</a></li>
+                    <li> <i class="fas fa-futbol"></i> <a href="#" class="lista-em-alta">Brasileirão</a></li>
+                    <li> <i class="fas fa-basketball-ball"></i> <a href="#" class="lista-em-alta">NBA</a></li>
+                    <li> <i class="fas fa-table-tennis"></i> <a href="#" class="lista-em-alta">Tênis</a></li>
+                    <li> <i class="bi bi-car-front-fill"></i> <a href="#" class="lista-em-alta">F1</a></li>
+                    <li> <i class="fas fa-football-ball"></i> <a href="#" class="lista-em-alta">NFL</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 col-md-8 apostas">
+                <div class="img-ney">
+                    <img src="img/neymar.jpeg" class="img-fluid" alt="Imagem do jogador" id="foto" onmouseover="trocaFoto()" onmouseleave="voltaFoto()">
+                </div>
+                <h4>Jogos Disponíveis</h4>
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Time 1</th>
+                            <th>Time 2</th>
+                            <th>Odds</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>29/01 17:00</td>
+                            <td>Manchester City</td>
+                            <td>Club Brugge</td>
+                            <td>
+                                <div class="odds-container">
+                                    <span class="odds-block odds-block-red">1.89</span>
+                                    <span class="odds-block odds-block-red">1.55</span>
+                                    <span class="odds-block odds-block-green">2.10</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>29/01 17:00</td>
+                            <td>PSV</td>
+                            <td>Liverpool</td>
+                            <td>
+                                <div class="odds-container">
+                                    <span class="odds-block odds-block-green">2.11</span>
+                                    <span class="odds-block odds-block-green">2.04</span>
+                                    <span class="odds-block odds-block-red">1.1</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>29/01 17:00</td>
+                            <td>Juventus</td>
+                            <td>Benfica</td>
+                            <td>
+                                <div class="odds-container">
+                                    <span class="odds-block odds-block-red">1.88</span>
+                                    <span class="odds-block odds-block-green">1.20</span>
+                                    <span class="odds-block odds-block-red">1.93</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>29/01 17:00</td>
+                            <td>Brest</td>
+                            <td>Real Madrid</td>
+                            <td>
+                                <div class="odds-container">
+                                    <span class="odds-block odds-block-green">3.45</span>
+                                    <span class="odds-block odds-block-green">2.73</span>
+                                    <span class="odds-block odds-block-red">1.23</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <button class="btn btn-warning">Apostar</button>
+                </div>
+            </div>
+
+            <div class="col-lg-3 sidebar-direita">
+                <div class="buscar-cupom">
+                    <h6>Buscar Cupom</h6>
+                    <input type="text" class="form-control mb-2" placeholder="Código do cupom">
+                    <button class="btn btn-dark w-100">Buscar</button>
+                </div>
+                <div class="cotacao bg-dark">
+                    <h6 class="text-center">Cotação Aproximada do Dia</h6>
+                    <p class="text-center">1 USD = R$ 6,15 | 1 EUR = R$ 6,43</p>
+                    <small class="informativo">
+                        * Valores aproximados e podem variar.
+                    </small>
+                </div>
+
+                <div class="text-center"">
+                    <h6>Faça Seu Depósito</h6>
+                    <a href="https://www.youtube.com/watch?v=uUQvoNM-Heo" target="_blank">
+                        <img src="img/pix.png" class="img-fluid" alt="Pix"">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid main-content">
+        <div class="mb-3">
+            <video id="videoPlayer" controls width="100%" preload="auto">
+                <source src="/Users/marcosalencar/Documents/facul/4ano/TDS/Trabalho1/img/cr7edit.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            
+            <div class="alert alert-primary d-flex align-items-center" role="alert" style="max-width: 600px; margin: 0 auto;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:" style="width: 24px; height: 24px;">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                <div>
+                    <p id="videoStatus" class="form-text text-warning"></p>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+</body>
+
+</html>

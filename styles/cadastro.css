@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #434343;
+    font-family: Arial, sans-serif;
+}
+
+.custom-navbar {
+    background-color: #005440;
+    padding: 0.8rem 1rem;
+}
+
+.custom-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.custom-brand:hover {
+    color: #00231b;
+}
+
+.form-container {
+    margin-top: 3rem;
+}
+
+.container-cadastrar {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #2E2E2E;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.texto-login {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-text{
+    color: white;
+}
+
+.btn-success {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #e0a800;
+}
+
+.hidden-message {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+.hidden-message.active {
+    display:block;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.usuario-template {
+    padding: 1rem 0;
+}
+
+.usuario-template hr {
+    border-top: 1px solid #ccc;
+}
+
+

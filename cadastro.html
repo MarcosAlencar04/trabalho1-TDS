@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Bet dos Amigos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="scripts/cadastro.js" defer></script>
+    <script src="scripts/usuarioCadastrado.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand custom-brand" href="index.html">Bet dos Amigos</a>
+        </div>
+    </nav>
+
+    <div class="container form-container">
+        <div class="container-cadastrar">
+            <div class="card">
+                <h3>Cadastrar</h3>
+                <form id="formCadastro" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                        <div class="invalid-feedback">Por favor, insira seu nome completo.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" required>
+                        <div class="invalid-feedback">Por favor, insira sua data de nascimento.</div>
+                    </div>                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                        <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" aria-describedby="passwordHelpBlock" required>
+                        <div class="invalid-feedback">A senha é obrigatória.</div>
+                        <div id="passwordHelpBlock" class="form-text">Sua senha deve conter entre 8-20 caracteres, no mínimo uma letra maiúscula e minúscula e um número</div>  
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmarSenha" class="form-label">Confirmar Senha</label>
+                        <input type="password" class="form-control" id="confirmarSenha" name="confirmarSenha" required>
+                        <div class="invalid-feedback">Por favor, confirme sua senha.</div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" class="form-check-input" id="termosCheckbox" required>
+                        <label for="termosCheckbox" class="form-check-label">
+                            Eu li e aceito os <a href="#" data-bs-toggle="modal" data-bs-target="#termosModal">termos de uso</a>.
+                        </label>
+                        <div class="invalid-feedback">Você deve aceitar os termos de uso para continuar.</div>
+                    </div>
+                    <div class="modal fade" id="termosModal" tabindex="-1" aria-labelledby="termosModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="termosModalLabel">Termos de Uso</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in lacus ac sem facilisis facilisis. Suspendisse potenti. Morbi tincidunt, massa non facilisis pellentesque, turpis magna bibendum eros, nec fermentum risus lectus vitae tortor.</p>
+                                    <p>Donec vitae justo vitae eros consequat vehicula at at lacus. Integer ut turpis ligula. Etiam malesuada tristique ipsum, a suscipit nulla faucibus non. Proin vel arcu vitae magna egestas feugiat sit amet ut augue. Duis convallis eros vitae sapien vehicula, a cursus lacus suscipit.</p>
+                                    <p>Curabitur vel nulla non dolor elementum volutpat sit amet nec elit. Praesent efficitur, tortor eget malesuada fermentum, tortor augue lacinia metus, a luctus odio ligula id magna.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success">Registrar</button>
+                    </div>
+                </form>
+                <div class="texto-login">
+                    <small>Já possui uma conta? <a href="login.html">Faça login</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hiddenMessage" class="hidden-message">Cadastro realizado com sucesso!</div>
+</body>
+</html>
