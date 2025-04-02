@@ -1,25 +1,25 @@
-# Casa de Apostas Fictícia - Bet dos Amigos
+# Fictional Casino - Bet dos Amigos
 
-## Descrição
-Este projeto foi desenvolvido para a disciplina de Tecnologias de Desenvolvimento de Sistemas. Trata-se de um site fictício (apenas frontend) de uma casa de apostas falsa, criado para demonstrar conhecimentos em HTML, CSS, Bootstrap e JavaScript. O JavaScript foi utilizado para simular um cadastro, armazenando os dados no Local Storage do navegador.
+## Description
+This project was developed for the Systems Development Technologies course. It is a fictional website (frontend only) of a fake casino, created to demonstrate knowledge in HTML, CSS, Bootstrap, and JavaScript. JavaScript was used to simulate a registration process, storing data in the browser's Local Storage.
 
-## Tecnologias Utilizadas
-- **HTML** – Estruturação do conteúdo.
-- **CSS** – Estilização e design do layout.
-- **Bootstrap** – Criação de componentes responsivos e agilização do desenvolvimento.
-- **JavaScript** – Simulação de cadastro com armazenamento dos dados no Local Storage.
+## Technologies Used
+- **HTML** – Content structuring.  
+- **CSS** – Styling and layout design.  
+- **Bootstrap** – Creation of responsive components and faster development.  
+- **JavaScript** – Simulated registration with data storage in Local Storage.
 
-## Como Executar o Projeto
-1. **Clone o repositório:**
+## How to Run the Project
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/your-username/repository-name.git
    ```
-2. **Acesse a pasta do projeto:**
+2. **Navigate to the project folder:**
    ```bash
-   cd nome-do-repositorio
+   cd repository-name
    ```
-3. **Abra o arquivo `index.html`** no seu navegador para visualizar a homepage.
+3. **Open the `index.html` file** in your browser to view the homepage.
 
-## Observações
-- O projeto é somente frontend e não possui integração com backend.
-- Um vídeo utilizado no site não está disponível, pois seu tamanho excede o limite permitido pelo GitHub. Caso ocorra algum erro, isso se deve à ausência do arquivo `cr7edit.mp4` na pasta `img`.
+## Notes
+- The project is frontend-only and has no backend integration.  
+- A video used on the site is not available because its size exceeds GitHub's upload limit. If any error occurs, it's likely due to the missing `cr7edit.mp4` file in the `img` folder.
